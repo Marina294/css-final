@@ -111,19 +111,6 @@ body {
 }
 
 
-.btn {
-  text-transform: uppercase;
-  background: $--clr-grey-1;
-  color: $--clr-white;
-  padding: 1rem 3.5rem;
-  letter-spacing: $--spacing;
-  display: inline-block;
-  transition: $--transition;
-  font-size: 1.125rem;
-
-  cursor: pointer;
-  
-}
 
 .section {
 
@@ -135,8 +122,12 @@ body {
     margin: 0 auto;
     max-width: 1040px;
   }
+  @media only screen and (max-width: 640px) {
+    &-title { 
+      margin: 7rem 1.5rem 3rem 1.5rem;
+    }
+  }
 }
-
 
 
 
@@ -166,11 +157,10 @@ body {
     align-items: center;
     padding: 1rem 2rem;
   }
-
   &-toggle {
     background: transparent;
     border: transparent;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: $--clr-white;
     cursor: pointer;
     transition: $--transition;
@@ -197,51 +187,59 @@ body {
     overflow: hidden;
     transition: $--transition;
   }
+  .show-links {
+    height: 280px;
+  }
+
+    @media (min-width: 769px) {
+        /* hide toggle button */
+      & {
+        padding: 1rem 2rem;
+      }
+      &-toggle {
+        display: none;
+      }
+      &-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* optional */
+        flex-wrap: wrap;
+      }
+      &-links {
+        height: auto;
+        display: flex;
+      }
+      &-header {
+        padding: 0 0;
+      }
+      &-link {
+        padding: 0 0;
+        margin-right: 2rem;
+      }
+      &-link:hover {
+        padding: 0;
+        color: $--clr-main-Yellow;
+        background: transparent;
+      }
+      &-icons {
+        display: flex;
+      }
+      &-icon {
+        margin-right: 2rem;
+        transition: $--transition;
+      }
+      &-icon-instagram {
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+      &-icon-youtube {
+        cursor: pointer;
+      }
+    }
+
 }
 
-
-@media (min-width: 769px) {
-  .nav-toggle {
-    display: none;
-  }
-  .nav-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* optional */
-    flex-wrap: wrap;
-  }
-  .nav-links {
-    height: auto;
-    display: flex;
-  }
-  .nav-header {
-    padding: 0 0;
-  }
-  .nav-link {
-    padding: 0 0;
-    margin-right: 2rem;
-  }
-  .nav-link:hover {
-    padding: 0;
-    color: $--clr-main-Yellow;
-    background: transparent;
-  }
-  .nav-icons {
-    display: flex;
-  }
-  .nav-icon {
-    margin-right: 2rem;
-    transition: $--transition;
-  }
-  .nav-icon-instagram {
-    margin-right: 2rem;
-    cursor: pointer;
-  }
-  .nav-icon-youtube {
-    cursor: pointer;
-  }
-}
 
 
 // Hero
@@ -254,9 +252,22 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+
+    &-pc { 
+      display: block; 
+    }
+    &-sp { 
+      display: none; 
+    }
+    @media only screen and (max-width: 640px) {
+      &-pc { 
+        display: none; 
+      }
+      &-sp { 
+        display: block; 
+      }
+    }
 }
-
-
 
 
 // About
@@ -324,29 +335,33 @@ body {
 .section-products {
   padding: 0;
 }
+
 .products-showcase {
-  list-style: none;
-  width: 100%;
-}
-.products-showcase li {
-  display: block;
-  float: left;
-  width: 30%;
+  //mobile view
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  //after mobile 
+  @media (min-width: 769px){
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* image container */
 .products-photo {
   /* same as parent */
   width: 100%;
+  height: 100%;
   margin: 0;
   overflow: hidden;
 }
 
 .products-photo img {
   width: 100%;
-  height: auto;
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
+  height: 100%;
+  object-fit: cover;
+  // -webkit-transform: scale(1.15);
+  // transform: scale(1.15);
 }
 
 
@@ -354,6 +369,7 @@ body {
 
 .location-map {
   max-width: 1040px;
+  height: 50vh;
   margin-left: auto;
   margin-right: auto;
   z-index: 4;
@@ -395,11 +411,27 @@ textarea {
   height: 112px;
 }
 
+.button {
+  text-align: center;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.btn
-input[type="submit"]
+input[type="submit"] {
+  display: inline-block;
+  font-family:$--ff-primary;
+  letter-spacing: $--spacing;
+  font-size: 16px;
+  padding: 8px 32px;
+  border-radius: 200px; 
+  border: 1px solid $--clr-grey-1; 
+  background: $--clr-grey-1; 
+  color: $--clr-white;    
 
-
+ 
+  cursor: pointer; 
+}
 
 // Footer
 
@@ -411,9 +443,6 @@ input[type="submit"]
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-footer-icon {
-  cursor: pointer;
 }
 
 .footer-icon-instagram {
