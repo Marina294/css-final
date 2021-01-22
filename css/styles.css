@@ -143,7 +143,7 @@ header {
   line-height: 48px;
 }
 
-#navi-icons {
+#nav-icons {
   display: block;
   width: 120px;
 }
@@ -339,6 +339,10 @@ header {
   padding: 0;
 }
 
+.products {
+  /* image container */
+}
+
 .products-showcase {
   display: -ms-grid;
   display: grid;
@@ -353,7 +357,6 @@ header {
   }
 }
 
-/* image container */
 .products-photo {
   /* same as parent */
   width: 100%;
