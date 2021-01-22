@@ -145,7 +145,7 @@ p {
 .nav-toggle {
   background: transparent;
   border: transparent;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s linear;
@@ -181,17 +181,7 @@ p {
   transition: all 0.3s linear;
 }
 
-.nav .show-links {
-  height: 280px;
-}
-
 @media (min-width: 769px) {
-  .nav {
-    /* hide toggle button */
-  }
-  .nav {
-    padding: 1rem 2rem;
-  }
   .nav-toggle {
     display: none;
   }

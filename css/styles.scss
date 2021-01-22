@@ -157,10 +157,11 @@ body {
     align-items: center;
     padding: 1rem 2rem;
   }
+
   &-toggle {
     background: transparent;
     border: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: $--clr-white;
     cursor: pointer;
     transition: $--transition;
@@ -187,15 +188,8 @@ body {
     overflow: hidden;
     transition: $--transition;
   }
-  .show-links {
-    height: 280px;
-  }
 
     @media (min-width: 769px) {
-        /* hide toggle button */
-      & {
-        padding: 1rem 2rem;
-      }
       &-toggle {
         display: none;
       }
