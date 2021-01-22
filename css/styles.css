@@ -162,8 +162,8 @@ header {
 #hamburger {
   display: block;
   position: absolute;
-  top: 20px;
-  left: 30px;
+  top: 24px;
+  left: 24px;
   width: 50px;
   height: 44px;
   cursor: pointer;
@@ -389,10 +389,6 @@ header {
   }
 }
 
-.find-form-box {
-  padding-bottom: 1rem;
-}
-
 input[type="text"],
 input[type="email"],
 select,
@@ -418,6 +414,7 @@ textarea {
   margin-right: auto;
 }
 
+button,
 input[type="submit"] {
   display: inline-block;
   font-family: "Heebo", sans-serif;
@@ -429,6 +426,12 @@ input[type="submit"] {
   background: #696970;
   color: #fff;
   cursor: pointer;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.product-button {
+  text-align: center;
 }
 
 .section-footer {

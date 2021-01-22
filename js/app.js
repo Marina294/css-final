@@ -1,13 +1,4 @@
 // // ********** nav toggle ************
-// // select button and links
-// //CSS is already provided for this, don't have to worry about nav bar :)
-// const navBtn = document.getElementById("nav-toggle");
-// const links = document.getElementById("nav-links");
-// // add event listener
-// navBtn.addEventListener("click", () => {
-//   links.classList.toggle("show-links");
-// });
-
 
 function hamburger() {
   document.getElementById('line1').classList.toggle('line_1');
@@ -22,3 +13,6 @@ document.getElementById('hamburger').addEventListener('click' , function () {
 } );
 
 
+$('#manu a[href]').on('click', function(event) {
+  $('.navToggle').trigger('click');
+});
