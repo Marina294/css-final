@@ -122,7 +122,12 @@ body {
     margin: 0 auto;
     max-width: 1040px;
   }
-  @media only screen and (max-width: 640px) {
+  @media screen and (max-width: 769px) {
+    &-title { 
+      margin: 3rem 1.5rem 3rem 1.5rem;
+    }
+  }
+  @media screen and (max-width: 426px) {
     &-title { 
       margin: 7rem 1.5rem 3rem 1.5rem;
     }
@@ -137,7 +142,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  height: 90px;
+
   background: $--clr-main-black;
 }
 #nav{
