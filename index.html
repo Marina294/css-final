@@ -33,18 +33,91 @@
   </head>
   <body>
     <!-- header  -->
-    <header id="home">
-      <nav class="nav">
-        <div class="nav-center">
+    <header>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#find" class="nav-link">Find Us</a></li>
+          <!-- single icon -->
+        <ul id="navi-icons">  
+          <li id="nav-icon">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <img
+            src="images/icon-instagram.svg"
+            alt="instagram-img"
+            id="instagram-img"
+            />
+          </a>
+          </li>
+            <!-- end of single icon -->
+            <!-- single icon -->
+          <li class="nav-icon">
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+            >
+              <img
+                src="images/icon-youtube.svg"
+                alt="youtube-img"
+                class="youtube-img"
+              />
+            </a>
+            </li>
+            <!-- end of single icon -->
+        </ul>
+      </ul>
+      </nav>
+      <div id="hamburger">
+        <span class="inner_line" id="line1"></span>
+        <span class="inner_line" id="line2"></span>
+        <span class="inner_line" id="line3"></span>
+      </div>
+    </header>
+
+
+
+    <!-- <header id="home"> -->
+      <!-- <nav class="nav" id="nav">
+        <div class="nav-center"> -->
           <!-- nav header -->
-          <div class="nav-header">
-            <button type="button" class="nav-toggle" id="nav-toggle">
+          <!-- <div class="nav-header"> -->
+            <!-- <button type="button" class="nav-toggle" id="nav-toggle">
               <i class="fas fa-bars"></i>
-            </button>
-          </div>
+            </button> -->
+
+            
+
+            <!-- <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">Products</a></li>
+                <li><a href="#services" class="nav-link">Find Us</a></li>
+              </ul>
+
+            <div id="hamburger">
+              <span class="inner_line" id="line1"></span>
+              <span class="inner_line" id="line2"></span>
+              <span class="inner_line" id="line3"></span>
+              <span class="inner_line" id="line4"></span>
+              <span class="inner_line" id="line5"></span>
+            </div>
+          
+          </div> -->
+
+
+
+
           <!-- end of nav header -->
-          <!-- nsvi link -->
-          <ul class="nav-links" id="nav-links">
+
+          <!-- navi link -->
+          <!-- <ul class="nav-links" id="nav-links">
             <li>
               <a href="#home" class="nav-link">Home</a>
             </li>
@@ -60,12 +133,12 @@
             <li>
               <a href="#find" class="nav-link">Find Us</a>
             </li>
-          </ul>
+          </ul> -->
           <!-- end of nav links -->
           <!-- nav icons -->
-          <ul class="nav-icons">
+          <!-- <ul class="nav-icons"> -->
             <!-- single icon -->
-            <li class="nav-icon-instagram">
+            <!-- <li class="nav-icon-instagram">
               　<img
                 src="images/icon-instagram.svg"
                 alt="instagram-img"
@@ -77,10 +150,10 @@
                 class="nav-icon"
               >
               </a>
-            </li>
+            </li> -->
             <!-- end of single icon -->
             <!-- single icon -->
-            <li class="nav-icon-youtube">
+            <!-- <li class="nav-icon-youtube">
               　<img
                 src="images/icon-youtube.svg"
                 alt="youtube-img"
@@ -92,15 +165,15 @@
                 class="nav-icon"
               >
               </a>
-            </li>
+            </li> -->
             <!-- end of single icon -->
-          </ul>
+          <!-- </ul> -->
           <!-- end of nav icons -->
-        </div>
-      </nav>
+        <!-- </div>
+      </nav> -->
 
       <!-- hero section -->
-      <div class="hero">
+      <div class="hero" id="home">
         <picture>
           <img class="hero-pc" src="images/MainVisual-1-d.png" alt="main-img">             
           <img class="hero-sp" src="images/MainVisual-1-m.png" alt="main-img">
@@ -208,43 +281,53 @@
         </div>
 
         <figure class="products-photo">
-          <img
-            src="images/product2.jpg"
-            alt="product2-img"
-            class="products-img"
-          />
+          <a href="#">
+            <img
+              src="images/product2.jpg"
+              alt="product2-img"
+              class="products-img"
+            />
+          </a>  
         </figure>
 
         <figure class="products-photo">
-          <img
-            src="images/product3.jpg"
-            alt="product3-img"
-            class="products-img"
-          />
+          <a  href="#">
+            <img
+              src="images/product3.jpg"
+              alt="product3-img"
+              class="products-img"
+            />
+          </a>  
         </figure>
 
         <figure class="products-photo">
-          <img
-            src="images/product4.jpg"
-            alt="product4-img"
-            class="products-img"
-          />
+          <a  href="#">
+            <img
+              src="images/product4.jpg"
+              alt="product4-img"
+              class="products-img"
+            />
+          </a>
         </figure>
 
         <figure class="products-photo">
-          <img
-            src="images/product5.jpg"
-            alt="product5-img"
-            class="products-img"
-          />
+          <a  href="#">
+            <img
+              src="images/product5.jpg"
+              alt="product5-img"
+              class="products-img"
+            />
+          </a>
         </figure>
 
         <figure class="products-photo">
-          <img
-            src="images/product6.jpg"
-            alt="product6-img"
-            class="products-img"
-          />
+          <a  href="#">
+            <img
+              src="images/product6.jpg"
+              alt="product6-img"
+              class="products-img"
+            />
+          </a>
         </figure>
       </figure>
     </section>
@@ -327,31 +410,31 @@
       <ul class="footer-icons">
         <!-- single icon -->
         <li class="footer-icon-instagram">
-          　<img
+          <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="footer-icon"
+          >　
+            <img
             src="images/icon-instagram.svg"
             alt="instagram-img"
             class="instagram-img"
-          />
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            class="footer-icon"
-          >
+            />
           </a>
         </li>
         <!-- end of single icon -->
         <!-- single icon -->
         <li class="footer-icon-youtube">
-          　<img
-            src="images/icon-youtube.svg"
-            alt="youtube-img"
-            class="youtube-img"
-          />
           <a
             href="https://www.youtube.com/"
             target="_blank"
             class="footer-icon"
           >
+          　<img
+            src="images/icon-youtube.svg"
+            alt="youtube-img"
+            class="youtube-img"
+            />
           </a>
         </li>
         <!-- end of single icon -->
