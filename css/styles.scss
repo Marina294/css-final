@@ -155,18 +155,18 @@ header {
   transition: .7s;
 
     & ul{
-      padding-top: 80px;
+      padding-top: 5rem;
     }
     & ul li{
       list-style-type: none;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-family: $--ff-primary;
       font-weight: 700;
-      line-height: 48px;
+      line-height: 3rem;
     }
     &-icons {
       display: block;
-      width: 120px;
+      width: 7.5rem;
     }
     
     & a{
@@ -174,7 +174,7 @@ header {
       text-decoration: none;
       color: $--clr-white;
       margin: 0 24px;
-      padding: 10px;
+      padding: 0.625rem;
       transition: .5s;
     }
     & li a:hover{
@@ -187,10 +187,10 @@ header {
 #hamburger {
   display: block;
   position: absolute;
-  top: 24px;
-  left: 24px;
-  width: 50px;
-  height: 44px;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 3.125rem;
+  height: 2.75rem;
   cursor: pointer;
   transition: 0.6s;
 }
@@ -198,17 +198,17 @@ header {
   display: block;
   position: absolute;
   left: 0;
-  width: 50px;
-  height: 3px;
+  width: 3.125rem;
+  height: 0.188rem;
   background-color: #ffffff;
   transition: 0.6s;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 #line1 {
   top: 0;
 }
 #line2 {
-  top: 20px;
+  top: 1.25rem;
 }
 #line3 {
   bottom: 0px;
@@ -234,12 +234,12 @@ header {
 
 @media screen and (max-width: 426px) {
   #nav ul li {
-    font-size: 14px;
-    line-height: 32px;
+    font-size: 0.875rem;
+    line-height: 2rem;
   }
   #navi-icons {
     display: block;
-    width: 100px;
+    width: 6.25rem;
   }
 }
 
@@ -476,7 +476,7 @@ header {
 // find us
 
 .location-map {
-  max-width: 1040px;
+  max-width: 65rem;
   height: 50vh;
   margin-left: auto;
   margin-right: auto;
@@ -485,11 +485,17 @@ header {
 .find {
   &-info {
   text-align: center;
-  padding: 24px 24px 64px 24px;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
   }
   &-form {
     width: 40%;
     margin: 0 auto;  
+  }
+  &-input-name {
+    margin-bottom: 24px;
+  }
+  &-input-email {
+    margin-bottom: 24px;
   }
   @media (max-width: 560px) {
     &-form {
